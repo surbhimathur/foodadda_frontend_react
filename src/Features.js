@@ -5,9 +5,11 @@ import React from "react";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 function Features() {
+  
   return (
-    <section className="features  js--features" id="fofeatures">
-      <div className="row" id="features">
+    // features section
+    <section className="features  js--features" id="features">
+      <div className="row" >
         <h2>Get food fast &mdash; not fast food</h2>
         <p className="long-copy">
           Hello, we're Food Adda, your new premium food delivery service. We
@@ -55,6 +57,7 @@ function Features() {
           </p>
         </div>
       </div>
+   
     </section>
   );
 }

@@ -6,22 +6,19 @@
 }
 .signup_section{
   background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../src/resources/css/img/back-customers.jpg);
-  height:100vh;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 .signup{
   width:500px;
-  border:1px solid black;
   background-color:rgba(255, 255, 255, 0.656);
   margin:50px auto;
   border-radius:10px;
   text-align: center;
-  padding-bottom:15px;
+  padding:15px 0px;
 }
 .home{
-  border:1px solid black;
   margin:0px auto;
   width:100%;
   display:flex;
@@ -37,18 +34,19 @@
 }
 .login
 {
-  border:1px solid black;
+  
   margin:50px auto;
  background-color:rgba(255, 255, 255, 0.656);
   width:500px;
   border-radius:10px;
   text-align: center;
+  padding:15px 0px;
 }
 
 .signin_button{
   margin:30px auto;
   width:60%;
-  border:1px solid black;
+  
   display:flex;
   align-items:center;
   justify-content:center;
@@ -64,7 +62,7 @@
 color:red;
 }
 .inputbox_sigin{
-  border:1px solid red;
+  
   width:100%;
   display:flex;
   flex-direction: column;
@@ -95,7 +93,7 @@ color:red;
   
 }
 .or{
-  border:1px solid black;
+  
   margin:30px 0px;
 }
 .loginbutton{
@@ -140,7 +138,7 @@ html,body {
 .row{
   max-width: 1200px;
   margin:0 auto;
-  border:1px solid red;
+  
  
 }
 
@@ -260,7 +258,7 @@ input[type=submit]:active{
 }
 
 #navbar{
-  border:1px solid white;
+
   display: flex;
   align-items: center;
   justify-content:space-between;
@@ -270,7 +268,7 @@ input[type=submit]:active{
   
   word-spacing: 1px;
   list-style: none;
-  border:1px solid white;
+  
   display:flex;
   align-items: center;
   justify-content:space-between;
@@ -279,7 +277,7 @@ input[type=submit]:active{
 
 .main-nav li{
 
-  border:1px solid white;
+ 
   height:40px;
   text-align:center;
 }
@@ -307,7 +305,7 @@ input[type=submit]:active{
 }
 
 .user_avatar{
-  border:1px solid red;
+ 
   display:flex;
   align-items:center;
   justify-content:center;
@@ -323,7 +321,7 @@ input[type=submit]:active{
 #sign_box{
   display:flex;
   align-items:center;
-  border:1px solid white;
+ 
   width:100px;
   margin-left:50%;
 }
@@ -333,12 +331,13 @@ input[type=submit]:active{
   border-bottom:none;
 }
 .subscribe_box{
-  border:1px solid black;
+  
   margin:50px auto;
  background-color:rgba(255, 255, 255, 0.656);
   width:500px;
   border-radius:10px;
   height:600px;
+  padding:15px 0px;
 }
 #subscribe{
   font-size:30px;
@@ -349,13 +348,12 @@ input[type=submit]:active{
 }
 .subscribe_form{
   background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../src/resources/css/img/back-customers.jpg);
-  height:100vh;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 .planform{
-  border:1px solid black;
+ 
   width:95%;
   margin:40px auto;
   display:flex;
@@ -389,7 +387,7 @@ input[type=submit]:active{
 }
 
 .box{
-border:1px solid black;
+
 width:23%;
 }
 
@@ -466,7 +464,7 @@ width:23%;
 
 
 .works{
-  border:1px solid black;
+  
   display:flex;
   flex-direction:row;
   justify-content:space-between;
@@ -491,7 +489,7 @@ width:23%;
   flex-direction:row;
   align-items:center;
   justify-content:space-between;
-  border:1px solid black;
+ 
   width:320px;
   margin:0px auto;
 }
@@ -535,7 +533,7 @@ width:23%;
 
 .city-detail{
   padding:20px;
-  border:1px solid black;
+  
   width:25%;
 }
 
@@ -589,7 +587,7 @@ btn-app:visited{
   display:flex;
   flex-direction: row;
   justify-content:space-between;
-  border:1px solid white;
+  
 }
 .testimonials {
   
@@ -599,7 +597,7 @@ btn-app:visited{
   color:white;
 }
 .customers{
-  border:1px solid yellow;
+
   width:31%;
 }
 blockquote{
@@ -639,7 +637,7 @@ cite img{
   background-color: #e2dbdb;
 }
 .plans_main_box{
-  border:1px solid black;
+ 
   display:flex;
   flex-direction: row;
   align-items: center;
@@ -650,8 +648,8 @@ cite img{
   border-radius: 10px;
   width:90%;
   margin-left:5%;
-  -webkit-box-shadow: 0 5px 5px #e67e22;
-  box-shadow: 0 5px 5px #e67e22;
+  
+  
 }
 .plan_name_box{
   width:32%;
@@ -659,6 +657,8 @@ cite img{
 .plan-box div{
   padding:15px;
   border-bottom: 1px solid #e8e8e8;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 
@@ -693,7 +693,7 @@ cite img{
 }
 
 .subscribe_button{
-  border:1px solid black;
+ 
   padding:0px;
   text-align:center;
 }
@@ -853,6 +853,12 @@ footer p{
 }
 
 
+.home_button{
+  border:1px solid black;
+  width:50px;
+  margin:0px 10px 0px 93%;
+
+}
 
 
   

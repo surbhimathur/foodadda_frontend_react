@@ -2,9 +2,14 @@ import Button from "@mui/material/Button";
 import CheckIcon from '@mui/icons-material/Check';
 import {Link} from "react-router-dom"
 import React from 'react'
+import {useLocation} from 'react-router-dom';
 
 function Plans() {
-    const name = localStorage.getItem("firstName");
+    const name = localStorage.getItem("firstName");         
+   const location= useLocation();
+  console.log(location.state?.plan);        // retrieving chosen plan selected by user from plansform file
+  
+  
   return (
     <section className="plans js-plans" id="signup">
     <div className="row" id="plans">
@@ -29,11 +34,14 @@ function Plans() {
             <li><CheckIcon style={{fontSize:"14px",marginRight:"10px",color:"#e67e22"}}/>Free delivery</li>
         </ul>
         </div>
+        {/* if user has signed in then only subscribe button will be visible to user and when user will select plan from form then all subscribe button will be disabled */}
         {name &&
            <div className="subscribe_button"> 
-          <Link to="/plansform"> <Button variant="contained" style={{ backgroundColor: "#e67e22",borderRadius:"200px"}}>Subscribe</Button></Link>
+          
+           {location.state?.plan?<Button variant="contained" disabled style={{borderRadius:"200px"}}>Subscribe</Button>:<Link to="/plansform" style={{borderBottom:"none"}}><Button variant="contained" style={{ backgroundColor: "#e67e22",borderRadius:"200px"}}>Subscribe</Button></Link>}
         </div> 
         }
+       
         </div>
         </div>
     
@@ -55,7 +63,7 @@ function Plans() {
         </div>
         {name &&
            <div className="subscribe_button"> 
-          <Link to="/plansform"> <Button variant="contained" style={{ backgroundColor: "#e67e22",borderRadius:"200px"}}>Subscribe</Button></Link>
+           {location.state?.plan?<Button variant="contained" disabled style={{borderRadius:"200px"}}>Subscribe</Button>:<Link to="/plansform" style={{borderBottom:"none"}}><Button variant="contained" style={{ backgroundColor: "#e67e22",borderRadius:"200px"}}>Subscribe</Button></Link>}
         </div> 
         }
         </div>
@@ -78,7 +86,7 @@ function Plans() {
         </div>
         {name &&
            <div className="subscribe_button"> 
-          <Link to="/plansform"> <Button variant="contained" style={{ backgroundColor: "#e67e22",borderRadius:"200px"}}>Subscribe</Button></Link>
+           {location.state?.plan?<Button variant="contained" disabled style={{borderRadius:"200px"}}>Subscribe</Button>:<Link to="/plansform" style={{borderBottom:"none"}}><Button variant="contained" style={{ backgroundColor: "#e67e22",borderRadius:"200px"}}>Subscribe</Button></Link>}
         </div> 
         }
         </div>

@@ -18,6 +18,7 @@ function Plansform() {
   const [emailSent, setEmailSent] = useState(false);
   
   const navigate=useNavigate();
+  //sending data to email 
   const submit = async () => {
     if (name && email && address && number && plan && isValidEmail(email)) {
        // TODO - send mail
@@ -41,7 +42,8 @@ function Plansform() {
         setPlan('');  
         setEmailSent(true);
         alert("You are subscribed for this plan");
-        navigate("/");
+        navigate("/",{state:{plan}});
+        
     } else {
         alert('Please fill in all fields.');
     }
@@ -53,14 +55,16 @@ const isValidEmail = email => {
   const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return regex.test(String(email).toLowerCase()); 
 };
+console.log(plan);
   return (
+    //form for subscribing plan
     <section className="subscribe_form">
     <div className="subscribe_box">
     <p id="subscribe">Subscribe Form</p>
         <form  className="planform">
-        <TextField error={!name.length>0} helperText={name.length>0 ? "" : "enter name"} label="Name" variant="standard" size="small" value={name} onChange={e => setName(e.target.value)} />
+        <TextField  label="Name" variant="standard" size="small" value={name} onChange={e => setName(e.target.value)} />
         <TextField label="Address" variant="standard" size="small" value={address} onChange={e => setAddress(e.target.value)}/>
-        <TextField  type="number" label="Contact" variant="standard"  size="small" value={number} onChange={e => setNumber(e.target.value)} />
+        <TextField  label="Contact" variant="standard"  size="small" value={number} onChange={e => setNumber(e.target.value)} />
         <TextField  label="Email id" variant="standard"  size="small" value={email} onChange={e => setEmail(e.target.value)} />
         <FormLabel className="select_plan">Select Plan </FormLabel>
       <RadioGroup

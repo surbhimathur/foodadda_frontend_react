@@ -5,7 +5,7 @@ import sunanda from "./resources/images/sunanda.jpg";
 
 function Testimonials() {
   return (
-    <section className="testimonials">
+    <section className="testimonials" id="testimonial">
     <div className="row">
         <h2>Our customers can't live without us</h2>
         </div>
