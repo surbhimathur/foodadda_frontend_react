@@ -24,7 +24,7 @@ setData({...data,[TextField.name]:TextField.value});
 const handleSubmit=async(e)=>{
   e.preventDefault();
   try {
-    const url="http://localhost:8080/api/auth";
+    const url="https://food-adda.herokuapp.com/api/auth";
     const {data:res}=await axios.post(url,data);
    
     localStorage.setItem("token",res.token);
