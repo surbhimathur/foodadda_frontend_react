@@ -359,10 +359,29 @@ input[type=submit]:active{
   display:flex;
   flex-direction:column; 
   justify-content:space-between;
-  height:450px;
+  height:550px;
 } 
 .select_plan{
   margin-top:20px;
+}
+.checkout{
+  
+  text-align:center;
+  margin-top:25px;
+}
+.selectedplan{
+  
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  margin-top:20px;
+}
+.selectedplan p{
+text-transform: uppercase;
+font-weight:bold;
+word-spacing: 5px;
 }
   .alert_message {
     display: none;
@@ -648,17 +667,17 @@ cite img{
   border-radius: 10px;
   width:90%;
   margin-left:5%;
-  
+  height:600px;
   
 }
 .plan_name_box{
   width:32%;
+  
 }
 .plan-box div{
   padding:15px;
   border-bottom: 1px solid #e8e8e8;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+
 }
 
 
@@ -666,7 +685,7 @@ cite img{
   font-size:200%;
   font-weight:300;
   color:#e67e22;
-  margin-bottom:10px;
+  /* margin-bottom:10px; */
 }
 
 .plan-price span{
@@ -697,7 +716,27 @@ cite img{
   padding:0px;
   text-align:center;
 }
-
+.selected_plan{
+  
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.selected_plan p{
+  font-weight:500;
+  color:black;
+ 
+}
+.total_amount{
+  
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.total_amount p{
+  font-weight:500;
+  color:black;
+}
 .co-form{
   width:60%;
   margin:0 auto;

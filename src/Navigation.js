@@ -30,7 +30,7 @@ function Navigation() {
     window.location.reload();
   };
 
-  const name = localStorage.getItem("firstName");   //for getting name form local storage
+  const name = localStorage.getItem("firstName");   //for getting name from local storage
 
   const [openDrawer, setOpenDrawer] = useState(false);
 

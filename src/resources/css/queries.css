@@ -24,6 +24,7 @@
         #sign_box{
           margin-left:60%;
         }
+        .plan-box{height:650px;}
     }
 
 
@@ -53,6 +54,9 @@
     width:16px;
 }
 .happy-eaters-box{font-size:90%;}
+
+ 
+  
 
 .plan-box{width:100%; margin-left:0%;}
 .plan-price{ font-size:150%;}
@@ -84,7 +88,7 @@
     margin-top:-10px;
     margin-left:-10px;
 } 
-
+.plan-box{height:auto;}
     
     .app-screen{width:40%;}
     /* .city-detail img{
@@ -161,6 +165,7 @@
         
         width:365px;
       }
+      
 }
 
 
