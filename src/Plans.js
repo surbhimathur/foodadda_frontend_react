@@ -152,6 +152,7 @@ function Plans() {
             </div>
             
             </div> 
+            {name &&
             <div className="checkout">
             <Button
         variant="contained"
@@ -167,22 +168,27 @@ function Plans() {
         Checkout
       </Button>
       </div>
+            }
       
       {/* display message when user already purchased plan */}
       <div className="selectedplan"> 
-      {
+      {name && mealplan &&
+      <p>You have purchased</p>}
+      {name && mealplan &&
         
-        mealplan.breakfast &&
+        mealplan?.breakfast &&
       
-     <p>you have purchased breakfast plan</p> }
+     <p>&nbsp;breakfast plan</p> }
       
-      {mealplan.lunch &&
+      {name && mealplan &&
+        mealplan?.lunch &&
       
-         <p>&nbsp;and lunch plan</p>}
+         <p>&nbsp;lunch plan</p>}
       
-      { mealplan.dinner &&
+      { name && mealplan &&
+        mealplan?.dinner &&
       
-        <p>&nbsp;and dinner plan</p>
+        <p>&nbsp;dinner plan</p>
       
       }
 </div>

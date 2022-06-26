@@ -23,7 +23,7 @@ function Plansform() {
   const [breakfast,setBreakfast]=useState(location.state?.cart.breakfast);
   const [lunch,setLunch]=useState(location.state?.cart.lunch);
   const [dinner,setDinner]=useState(location.state?.cart.dinner);
-  
+  console.log(breakfast,lunch,dinner);
   
 const [totalAmount,setTotalAmount]=useState(0);
 

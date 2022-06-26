@@ -379,7 +379,7 @@ input[type=submit]:active{
   margin-top:20px;
 }
 .selectedplan p{
-text-transform: uppercase;
+text-transform:capitalize;
 font-weight:bold;
 word-spacing: 5px;
 }
